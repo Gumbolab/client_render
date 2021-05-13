@@ -15,7 +15,7 @@ signup.onclick = () => {
         // alert("here");
         // console.log("here ")
         location.replace("/html/signup.html");
-        alert("navigate to signup page");
+        // alert("navigate to signup page");
 }
 function validateInput(userName) {
         if (userName === '') {
