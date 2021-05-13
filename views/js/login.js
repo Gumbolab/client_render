@@ -32,7 +32,7 @@ function validateInput(userName) {
 
 
 function PostUserLoginData() {
-        var theUrl = 'http://0.0.0.0:5000/users';
+        var theUrl = 'https://0.0.0.0:5000/users';
         var userName = document.getElementsByClassName("typing-user")[0].value;
 
         var pw = document.getElementsByClassName("typing-pw")[0].value;

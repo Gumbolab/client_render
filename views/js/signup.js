@@ -26,7 +26,7 @@ function CREATENEWACCOUNT() {
         var name = document.getElementById("typing-name").value;
         var pw = document.getElementById("typing-pw").value;
         var mail = document.getElementById('typing-mail').value;
-        var theUrl = 'http://0.0.0.0:5000/users1';
+        var theUrl = 'https://0.0.0.0:5000/users1';
         console.log(" start the function");
         function callback(res) {
                 console.log(res);
