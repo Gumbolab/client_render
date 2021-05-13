@@ -13,8 +13,8 @@ document.getElementsByClassName("typing-pw")[0].value = user.pw;
 signup.onclick = () => {
         // window.location.href = '/html/signup.html';
         // alert("here");
-        console.log("here ")
-        // location.replace("/html/signup.html");
+        // console.log("here ")
+        location.replace("/html/signup.html");
         alert("navigate to signup page");
 }
 function validateInput(userName) {
