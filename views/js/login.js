@@ -18,6 +18,7 @@ signup.onclick = () => {
         // alert("navigate to signup page");
 }
 function validateInput(userName) {
+        console.log(" validate input");
         if (userName === '') {
                 error_user_name.innerHTML = 'please typing your user name or your mail';
                 return Promise.resolve(true);// true if have error
