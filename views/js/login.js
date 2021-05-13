@@ -5,10 +5,12 @@ var checkbox = document.getElementById('remeber_pw');
 // try to get data from local staorage 
 var user = JSON.parse(window.localStorage.getItem('user'));
 // 
-console.log(user);
-console.log(document.getElementsByClassName("typing-user")[0]);
-document.getElementsByClassName("typing-user")[0].value = user.mail;
-document.getElementsByClassName("typing-pw")[0].value = user.pw;
+if (user != null) {
+        document.getElementsByClassName("typing-user")[0].value = user.mail;
+        document.getElementsByClassName("typing-pw")[0].value = user.pw;
+
+}
+
 
 signup.onclick = () => {
         // window.location.href = '/html/signup.html';
@@ -31,9 +33,9 @@ function validateInput(userName) {
 
 function PostUserLoginData() {
         var theUrl = 'http://0.0.0.0:5000/users';
-        var userName = document.getElementsByClassName("typing-user")[0].value ;
-        
-        var pw = document.getElementsByClassName("typing-pw")[0].value ;
+        var userName = document.getElementsByClassName("typing-user")[0].value;
+
+        var pw = document.getElementsByClassName("typing-pw")[0].value;
 
         function callback(res) {
                 console.log('hello');
@@ -55,7 +57,7 @@ function PostUserLoginData() {
                 } else if (res == 'NOT FOUND') {
                         error_user_name.innerHTML = 'account not existed';
                 }
-        } 
+        }
 
 
 
@@ -89,7 +91,7 @@ login.addEventListener('click', PostUserLoginData);
 
 /*
 to access cross origin error :
-        1. send request with header allow origin 
+        1. send request with header allow origin
         2. wait to response
         3. when be allow--> open the gate
 
