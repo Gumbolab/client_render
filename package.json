@@ -1,24 +1,22 @@
 {
-  "name": "dependences",
+  "name": "render-dep",
   "version": "1.0.0",
-  "description": "making client render server",
-  "main": "app-server.js",
+  "description": "client render server",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app-server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gumbolab/client_render.git"
   },
-  "author": "Minh Hien",
+  "author": "minh hien",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Gumbolab/client_render/issues"
   },
   "homepage": "https://github.com/Gumbolab/client_render#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1"
   }
 }
